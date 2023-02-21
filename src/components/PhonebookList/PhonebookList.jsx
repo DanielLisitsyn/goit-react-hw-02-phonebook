@@ -16,6 +16,12 @@ const PhonebookList = ({ contacts, onDeleteContact }) => {
 export default PhonebookList;
 
 PhonebookList.protoTypes = {
-  contacts: PropTypes.string,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      number: PropTypes.number,
+      name: PropTypes.string,
+    })
+  ),
   onDeleteContact: PropTypes.func,
 };

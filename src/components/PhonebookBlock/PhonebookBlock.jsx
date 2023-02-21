@@ -13,5 +13,6 @@ const PhonebookBlock = ({ title, children }) => {
 export default PhonebookBlock;
 
 PhonebookBlock.propTypes = {
+  title: PropTypes.string,
   children: PropTypes.node,
 };
