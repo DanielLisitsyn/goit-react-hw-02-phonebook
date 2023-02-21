@@ -1,4 +1,5 @@
 import css from './PhonebookList.module.css';
+import PropTypes from 'prop-types';
 
 const PhonebookList = ({ contacts, onDeleteContact }) => {
   const elements = contacts.map(({ id, number, name }) => (
@@ -13,3 +14,8 @@ const PhonebookList = ({ contacts, onDeleteContact }) => {
 };
 
 export default PhonebookList;
+
+PhonebookList.protoTypes = {
+  contacts: PropTypes.string,
+  onDeleteContact: PropTypes.func,
+};

@@ -1,4 +1,5 @@
 import css from './PhonebookBlock.module.css';
+import PropTypes from 'prop-types';
 
 const PhonebookBlock = ({ title, children }) => {
   return (
@@ -10,3 +11,7 @@ const PhonebookBlock = ({ title, children }) => {
 };
 
 export default PhonebookBlock;
+
+PhonebookBlock.propTypes = {
+  children: PropTypes.node,
+};
